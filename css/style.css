@@ -1,0 +1,123 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    padding-top: 70px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-family: 'Press Start 2P', cursive;
+}
+h3{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+}
+p{
+    font-size: 16px;
+}
+.notButton{
+  width: 300px;
+}
+textarea{
+    width:300px;
+    height: 100px;
+}
+object{
+    overflow: scroll;
+    height: 800px;
+}
+#headerContainer{
+    display: flex;
+    flex-direction: row;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#thatsMe{
+    
+    border: 1px solid black;
+    border-radius: 30px;
+   
+}
+#thatsMyName{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5em;
+    color: blue;
+}
+#statement{
+    font-family: 'Press Start 2P', cursive;
+}
+/*Overriding bootstrap*/
+
+/*Regular Nav bar CSS*/
+header .navbar{
+    padding: 15px 0;
+}
+header .navbar-default{
+    background-color: transparent;
+    opacity: .7;
+    border: none;
+}
+
+header .navbar-default .navbar-nav a{
+color: #1e3044;
+padding: 3px 5px;
+}
+header .navbar-default .navbar-nav a:hover{
+    color: blue ;
+   
+}
+header .navbar-default .navbar-nav .active a{
+    color: blue ;
+    font-weight: 700;
+    background: transparent;
+    border-bottom: 4px solid blue;
+    text-shadow: none;
+}
+header .navbar-default .navbar-nav .active a:hover{
+    color:red;
+}
+/*Toggle Nav bar CSS*/
+
+header .navbar-toggle{
+    background-color:#ffffff ;
+}
+@media only screen and (max-width: 768px){
+    header .navbar-collapse.in{
+        background-color:#e1e9f0;
+    }
+    object{
+        height: 450px;
+    }
+}
+
+.page{
+    padding: 50px 0;
+}
+.contactlinks{
+display: flex;
+flex-direction: column;
+}
+.navbar__link{
+background-color: #ffffff;
+color:black;
+font-size:1.25em;
+border: 1px solid black;
+border-radius: 5px;
+padding: 12px 22px;
+margin: 0 0 4px;
+transition:ease;
+transition-property: padding;
+transition-duration: .25s;
+transition-delay:0s ;
+}
+
+.navbar__link:hover {
+padding: 20px 22px;
+}

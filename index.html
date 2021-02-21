@@ -6,31 +6,28 @@
   <title>Brady's Portfolio</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body id= "top">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<body data-spy="scroll" data-target="#pageNavigation" data-offset="500" id= "top">
+  <header>
+  <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light" id="pageNavigation" role="navigation">
     <div class="container">
       <div class="navbar-header" >
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
       </div>
       <!--navbar-header-->
       <div class="collapse navbar-collapse" id="collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="navbar-nav navbar-right">
           <li class="active"><a href="#top">Home</a></li>
           <li><a href="#aboutMe">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
           <li><a href="#contactMe">Contact Me</a></li>
         </ul>
       </div>
@@ -38,6 +35,7 @@
     </div>
     <!--container-->
   </nav>
+</header>
   <div class="main">
     <div class="page" >
       <div class="content container" id="headerContainer">
@@ -59,13 +57,11 @@
       <div class="content container">
         <h2>About Me</h2>
         <p>I am a Game Programmer from Lisbon Connecticut. I enjoy the process of creating living breathing objects
-          from lines of text on a
-          computer screen. I spend my offtime playing card games and watching Anime with friends.</p>
-      </div><!--Content Container-->
-    </div><!-- aboutMe Page -->
+          from lines of text on a computer screen. I spend my offtime playing card games and watching Anime with friends.</p>
+      </div>
+    </div>
   </div>
     <hr id="projects">
-  
     <div class="main">
       <div class="page">
         <div class="content container">
@@ -75,13 +71,11 @@
               <h3>Egg</h3>
               <div class="col-sm-4">
                 <p>Egg is a 2D platformer where you play as a chicken who must rescue all of their eggs. Players will
-                  run,jump, and dash around the level to reach the end goal. I worked on this game with 3 other students
-                  for a C# programming class project.</p>
+                  run,jump, and dash around the level to reach the end goal. The game was created by a team of 4 people.</p>
                 <p><b>Technologies Used</b></p>
                 <ul>
                   <li class="text">C#</li>
                   <li class="text">Monogame Game Library for C#</li>
-                  <li class="text">GIT version control using Visual Studio</li>
                 </ul>
                 <p><b>My jobs as a member of the group</b></p>
                 <ul>
@@ -94,12 +88,18 @@
               <div class="col-sm-8">
                 <div class="carousel slide" data-ride="carousel" id="egg">
                   <div class="carousel-inner">
-                    <div class="item active"><img src="images/eggScreenshot1.PNG" alt="A screenshot of egg"></div>
-                    <div class="item"><img src="images/eggScreenshot2.PNG" alt="Another screenshot of egg"></div>
-                    <div class="item "><img src="images/eggScreenshot3.PNG" alt="The final screenshot of egg"></div>
+                    <div class="carousel-item active "><img class="col-sm-12" src="images/eggScreenshot1.PNG" alt="A screenshot of egg"></div>
+                    <div class="carousel-item"><img class="col-sm-12" src="images/eggScreenshot2.PNG" alt="Another screenshot of egg"></div>
+                    <div class="carousel-item"><img class="col-sm-12" src="images/eggScreenshot3.PNG" alt="The final screenshot of egg"></div>
                   </div><!--carousel-inner-->
-                  <a class="left carousel-control" href="#egg" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                  <a class="right carousel-control" href="#egg" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+                  <a class="carousel-control-prev left" href="#egg" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next shadow-sm" href="#egg" role="button" data-slide="next"> 
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div><!-- egg carousel-->
               </div> <!--col-sm-8-->
              
@@ -111,7 +111,7 @@
             <h3>Amiibase</h3>
             <div class="col-sm-4">
               <p>Amiibase is a website that allows users to search for Amiibo Figures using the AmiiboAPI API. the user can search by the Amiibo Series, and Type.
-                The user can also limit the amount of results given. This website was made with another classmate as a project for a Website Design Class. </p>
+                The user can also limit the amount of results given.</p>
               <p><b>Technologies Used</b></p>
                 <ul>
                   <li class="text">HTML</li>
@@ -129,13 +129,13 @@
             <div class="col-sm-8">
                 <div class="carousel slide" data-ride="carousel" id="amiibase">
                     <div class="carousel-inner">
-                      <div class="item active"><img src="images/amiibaseScreenshot1.PNG" alt="A screenshot of Amiibase"></div>
-                      <div class="item"><img src="images/amiibaseScreenshot2.PNG" alt="Another screenshot of Amiibase"></div>
-                      <div class="item "><img src="images/amiibaseScreenshot3.PNG" alt="The final screenshot of Amiibase"></div>
+                      <div class="carousel-item active"><img class="col-sm-12" src="images/amiibaseScreenshot1.PNG" alt="A screenshot of Amiibase"></div>
+                      <div class="carousel-item"><img class="col-sm-12" src="images/amiibaseScreenshot2.PNG" alt="Another screenshot of Amiibase"></div>
+                      <div class="carousel-item"><img class="col-sm-12" src="images/amiibaseScreenshot3.PNG" alt="The final screenshot of Amiibase"></div>
                     </div>
                     <!--carousel-inner-->
-                    <a class="left carousel-control" href="#amiibase" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                    <a class="right carousel-control" href="#amiibase" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="carousel-control-prev" href="#amiibase" role="button" data-slide="prev"><span class="carousel-control-prev-icon" ></span></a>
+                    <a class="carousel-control-next" href="#amiibase" role="button" data-slide="next"> <span class="carousel-control-next-icon"></span></a>
                   </div><!-- amiibase carousel-->
                 </div><!--col-sm-8-->
             </div><!--col-sm-12-->
@@ -143,14 +143,13 @@
           </div><!--content container-->
         </div><!--page-->
       </div><!--main-->
-      <hr id="resume">
+      <hr id="contactMe">
       <div class="main">
         <div class="page">
           <div class="content container center">
             <div class="col-sm-6">
               <h2>Contact Me</h2>
             </div>
-            
             <div class="col-sm-6 contactlinks">
               <a href="mailto:me@bradyfriese.com" class = "navbar__link" target="_blank" rel="noopener noreferrer">me@bradyfriese.com</a>
               <a href="(resumeLinkHere)" class = "navbar__link" target="_blank" rel="noopener noreferrer">Resume</a>

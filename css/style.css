@@ -62,28 +62,28 @@ object{
 header .navbar{
     padding: 15px 0;
 }
-header .navbar-default{
-    background-color: transparent;
-    opacity: .7;
+header .navbar-expand-sm{
+    background-color: #DCDCDC;
+    opacity: .9;
     border: none;
 }
 
-header .navbar-default .navbar-nav a{
+header .navbar-expand-sm .navbar-nav a{
 color: #1e3044;
 padding: 3px 5px;
 }
-header .navbar-default .navbar-nav a:hover{
+header .navbar-expand-sm .navbar-nav a:hover{
     color: blue ;
    
 }
-header .navbar-default .navbar-nav .active a{
+header .navbar-expand-sm .navbar-nav .active a{
     color: blue ;
     font-weight: 700;
     background: transparent;
     border-bottom: 4px solid blue;
     text-shadow: none;
 }
-header .navbar-default .navbar-nav .active a:hover{
+header .navbar-expand-sm .navbar-nav .active a:hover{
     color:red;
 }
 /*Toggle Nav bar CSS*/
